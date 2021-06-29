@@ -1,0 +1,53 @@
+body {
+  background-color: #070d19;
+  font-family: "Josefin Sans", sans-serif;
+  color: #f4f8ff;
+  font-weight: 300;
+}
+
+.login {
+  height: 100vh;
+}
+
+.login .text h4 {
+  text-align: center;
+  line-height: 1.4em;
+  color: #f4f8ff;
+  font-weight: 400;
+}
+
+.login .text h4 .title {
+  font-weight: 700;
+}
+
+.login .logo {
+  margin-bottom: 2.5em;
+}
+
+.login .form input {
+  background-color: #0c1427;
+  border: none;
+  padding: 0.6em 1em;
+  color: #bfc3ce;
+  border-radius: 12px;
+}
+
+.login .form input#username {
+  margin-bottom: 1.1em;
+}
+
+.login .form a.small {
+  color: #bfc3ce;
+  display: block;
+  text-decoration: none;
+  margin-top: 0.8em;
+  text-align: right;
+}
+
+.login .form .masuk {
+  background-color: #f4f8ff;
+  color: #0c1427;
+  font-size: 1.2em;
+  border-radius: 12px;
+}
+/*# sourceMappingURL=login.css.map */

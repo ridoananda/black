@@ -1,0 +1,194 @@
+body {
+  background-color: #070d19;
+  font-family: "Josefin Sans", sans-serif;
+  color: #f4f8ff;
+  font-weight: 400;
+}
+
+.sidebar-navbar {
+  background-color: #0c1427;
+  padding-bottom: 4em;
+}
+
+.sidebar-navbar .info {
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar-navbar .info {
+    margin: 2em 0;
+  }
+}
+
+.sidebar-navbar .info .profil h4 {
+  margin-bottom: -2px;
+}
+
+.sidebar-navbar .info .profil .role {
+  color: #bfc3ce;
+}
+
+.sidebar-navbar .info .notifikasi .btn {
+  background-color: #727cf5;
+  color: #f4f8ff;
+  font-size: 1.5em;
+  padding: 0.1em 0.4em;
+  border-radius: 50%;
+}
+
+.sidebar-navbar .greeting {
+  margin-top: 2.4em;
+}
+
+.sidebar-navbar .greeting h2 {
+  margin-bottom: 0;
+}
+
+.sidebar-navbar .greeting p {
+  color: #bfc3ce;
+}
+
+.sidebar-navbar .search {
+  margin-top: 2em;
+}
+
+.sidebar-navbar .search input {
+  background-color: #f4f8ff;
+  border-radius: 20px;
+  color: #262626;
+}
+
+.sidebar-navbar .search button {
+  background-color: #727cf5;
+  border-radius: 50%;
+  color: #f4f8ff;
+  border: none;
+}
+
+.sidebar-navbar .sidebar {
+  margin: 2em 0;
+  border: 4px solid #727cf5;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  padding-top: 1em;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .sidebar-navbar .sidebar {
+    display: none;
+  }
+}
+
+.sidebar-navbar .sidebar nav a {
+  color: #bfc3ce;
+  padding: 0.4em 0;
+  font-size: 1.2em;
+}
+
+.sidebar-navbar .sidebar nav a.active {
+  color: #f4f8ff;
+}
+
+.sidebar-navbar .sidebar nav a i {
+  font-size: 1.6em;
+  margin-right: 0.5em;
+}
+
+.sidebar-navbar nav.navbar {
+  background-color: #0c1427;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+  padding: 0 0em;
+}
+
+@media (min-width: 768px) {
+  .sidebar-navbar nav.navbar {
+    display: none;
+  }
+}
+
+.sidebar-navbar nav.navbar a.active {
+  color: #f4f8ff;
+}
+
+.sidebar-navbar nav.navbar a i {
+  font-size: 1.4em;
+}
+
+.sidebar-navbar nav.navbar a small {
+  display: block;
+  margin-top: -6px;
+}
+
+#content .title h1 {
+  display: inline-block;
+  position: relative;
+}
+
+#content .title h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  width: 50%;
+  height: 3px;
+  background-color: #f4f8ff;
+  border-radius: 6px;
+}
+
+#content .title h1 i {
+  font-size: 0.9em;
+  margin-right: 0.3em;
+}
+
+#content .title a {
+  font-size: 0.9em;
+  color: #bfc3ce;
+  text-decoration: none;
+}
+
+#content .title a i {
+  font-size: 0.6em;
+}
+
+#content .konten-kategori {
+  margin-top: 1.4em;
+}
+
+#content .konten-kategori .btn-kategori {
+  font-size: 0.9em;
+  margin-right: 0.8em;
+  margin-bottom: 1em;
+  background-color: #727cf5;
+  color: #f4f8ff;
+  border-radius: 12px;
+}
+
+#content .video {
+  margin-top: 1.4em;
+}
+
+#content .video .info-video {
+  margin-top: 0.6em;
+}
+
+#content .video .info-video .time {
+  color: #bfc3ce;
+}
+
+#content .video .info-video .uploader {
+  margin-top: 0.4em;
+}
+
+#content .video .info-video .uploader h5 {
+  margin-bottom: -4px;
+  font-size: 1.1em;
+}
+
+#content .video .info-video .uploader small {
+  color: #bfc3ce;
+}
+/*# sourceMappingURL=main.css.map */

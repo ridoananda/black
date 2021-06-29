@@ -1,0 +1,48 @@
+@import "_variable.scss";
+body {
+  background-color: $backgroundColor;
+  font-family: "Josefin Sans", sans-serif;
+  color: $secondaryColor;
+  font-weight: 300;
+}
+
+.login {
+  height: 100vh;
+  .text h4 {
+    text-align: center;
+    line-height: 1.4em;
+    color: $secondaryColor;
+    font-weight: 400;
+    .title {
+      font-weight: 700;
+    }
+  }
+  .logo {
+    margin-bottom: 2.5em;
+  }
+  .form {
+    input {
+      background-color: $primaryColor;
+      border: none;
+      padding: 0.6em 1em;
+      color: $secondaryText;
+      border-radius: 12px;
+      &#username {
+        margin-bottom: 1.1em;
+      }
+    }
+    a.small {
+      color: $secondaryText;
+      display: block;
+      text-decoration: none;
+      margin-top: 0.8em;
+      text-align: right;
+    }
+    .masuk {
+      background-color: $secondaryColor;
+      color: $primaryColor;
+      font-size: 1.2em;
+      border-radius: 12px;
+    }
+  }
+}
