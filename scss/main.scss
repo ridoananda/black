@@ -60,6 +60,7 @@ body {
     }
   }
 
+  // SIDEBRAR DESKTOP
   .sidebar {
     @media (max-width: 768px) {
       display: none;
@@ -87,6 +88,7 @@ body {
     }
   }
 
+  // NAVBAR BWH ANDROID
   nav.navbar {
     @media (min-width: 768px) {
       display: none;
@@ -107,7 +109,7 @@ body {
       }
       small {
         display: block;
-        font-size: .8em;
+        font-size: .7em;
         margin-top: -6px;
       }
     }
@@ -119,6 +121,10 @@ body {
     h1 {
       display: inline-block;
       position: relative;
+      font-size: 1.5em;
+      @media (min-width: 768px) {
+        font-size: 1.7em;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -136,7 +142,7 @@ body {
       }
     }
     a {
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: $secondaryText;
       text-decoration: none;
       i {

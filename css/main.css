@@ -123,13 +123,20 @@ body {
 
 .sidebar-navbar nav.navbar a small {
   display: block;
-  font-size: .8em;
+  font-size: .7em;
   margin-top: -6px;
 }
 
 #content .title h1 {
   display: inline-block;
   position: relative;
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  #content .title h1 {
+    font-size: 1.7em;
+  }
 }
 
 #content .title h1::after {
@@ -150,7 +157,7 @@ body {
 }
 
 #content .title a {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #bfc3ce;
   text-decoration: none;
 }
