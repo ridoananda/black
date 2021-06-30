@@ -121,7 +121,7 @@ body {
     h1 {
       display: inline-block;
       position: relative;
-      font-size: 1.5em;
+      font-size: 1.3em;
       @media (min-width: 768px) {
         font-size: 1.7em;
       }
@@ -132,7 +132,7 @@ body {
         right: 0;
         bottom: -6px;
         width: 50%;
-        height: 3px;
+        height: 2px;
         background-color: $secondaryColor;
         border-radius: 6px;
       }
@@ -142,7 +142,7 @@ body {
       }
     }
     a {
-      font-size: 0.8em;
+      font-size: 0.7em;
       color: $secondaryText;
       text-decoration: none;
       i {

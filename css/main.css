@@ -130,7 +130,7 @@ body {
 #content .title h1 {
   display: inline-block;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 @media (min-width: 768px) {
@@ -146,7 +146,7 @@ body {
   right: 0;
   bottom: -6px;
   width: 50%;
-  height: 3px;
+  height: 2px;
   background-color: #f4f8ff;
   border-radius: 6px;
 }
@@ -157,7 +157,7 @@ body {
 }
 
 #content .title a {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #bfc3ce;
   text-decoration: none;
 }
