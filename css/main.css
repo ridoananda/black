@@ -45,6 +45,7 @@ body {
 }
 
 .sidebar-navbar .greeting p {
+  font-weight: 300;
   color: #bfc3ce;
 }
 
@@ -131,6 +132,10 @@ body {
   padding-bottom: 2em;
 }
 
+#content .title {
+  margin-bottom: 1.4em;
+}
+
 #content .title h1 {
   display: inline-block;
   position: relative;
@@ -161,17 +166,19 @@ body {
 }
 
 #content .title a {
-  font-size: 0.7em;
+  font-size: 0.9em;
   color: #bfc3ce;
   text-decoration: none;
 }
 
-#content .title a i {
-  font-size: 0.6em;
+@media (max-width: 728px) {
+  #content .title a {
+    font-size: 0.7em;
+  }
 }
 
-#content .konten-kategori {
-  margin-top: 1.4em;
+#content .title a i {
+  font-size: 0.6em;
 }
 
 #content .konten-kategori .btn-kategori {
@@ -183,10 +190,6 @@ body {
   border-radius: 12px;
 }
 
-#content .video {
-  margin-top: 1.4em;
-}
-
 #content .video .info-video {
   margin-top: 0.5em;
 }
@@ -196,15 +199,18 @@ body {
 }
 
 #content .video .info-video .time {
+  font-weight: 300;
   color: #bfc3ce;
   font-size: .7em;
 }
 
 #content .video .info-video .uploader {
+  font-weight: 300;
   margin-top: 0.1em;
 }
 
 #content .video .info-video .uploader h5 {
+  font-weight: 300;
   margin-bottom: -4px;
   font-size: .9em;
 }

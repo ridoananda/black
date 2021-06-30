@@ -41,6 +41,7 @@ body {
       margin-bottom: 0;
     }
     p {
+      font-weight: 300;
       color: $secondaryText;
     }
   }
@@ -119,6 +120,7 @@ body {
 #content {
   padding-bottom: 2em;
   .title {
+    margin-bottom: 1.4em;
     h1 {
       display: inline-block;
       position: relative;
@@ -143,7 +145,10 @@ body {
       }
     }
     a {
-      font-size: 0.7em;
+      @media (max-width: 728px) {
+        font-size: 0.7em;
+      }
+      font-size: 0.9em;
       color: $secondaryText;
       text-decoration: none;
       i {
@@ -153,7 +158,7 @@ body {
   }
 
   .konten-kategori {
-    margin-top: 1.4em;
+    // margin-top: 1.4em;
     .btn-kategori {
       font-size: 0.9em;
       margin-right: 0.8em;
@@ -165,19 +170,22 @@ body {
   }
 
   .video {
-    margin-top: 1.4em;
+    // margin-top: 1.4em;
     .info-video {
       h5 {
        font-size: 1.1em; 
       }
       margin-top: 0.5em;
       .time {
+        font-weight: 300;
         color: $secondaryText;
         font-size: .7em;
       }
       .uploader {
+        font-weight: 300;
         margin-top: 0.1em;
         h5 {
+          font-weight: 300;
           margin-bottom: -4px;
           font-size: .9em;
         }
