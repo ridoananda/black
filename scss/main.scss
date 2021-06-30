@@ -117,11 +117,12 @@ body {
 }
 
 #content {
+  padding-bottom: 2em;
   .title {
     h1 {
       display: inline-block;
       position: relative;
-      font-size: 1.3em;
+      font-size: 1.4em;
       @media (min-width: 768px) {
         font-size: 1.7em;
       }
@@ -166,17 +167,22 @@ body {
   .video {
     margin-top: 1.4em;
     .info-video {
-      margin-top: 0.6em;
+      h5 {
+       font-size: 1.1em; 
+      }
+      margin-top: 0.5em;
       .time {
         color: $secondaryText;
+        font-size: .7em;
       }
       .uploader {
-        margin-top: 0.4em;
+        margin-top: 0.1em;
         h5 {
           margin-bottom: -4px;
-          font-size: 1.1em;
+          font-size: .9em;
         }
         small {
+          font-size: .7em;
           color: $secondaryText;
         }
       }

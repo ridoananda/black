@@ -127,10 +127,14 @@ body {
   margin-top: -6px;
 }
 
+#content {
+  padding-bottom: 2em;
+}
+
 #content .title h1 {
   display: inline-block;
   position: relative;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 @media (min-width: 768px) {
@@ -184,23 +188,29 @@ body {
 }
 
 #content .video .info-video {
-  margin-top: 0.6em;
+  margin-top: 0.5em;
+}
+
+#content .video .info-video h5 {
+  font-size: 1.1em;
 }
 
 #content .video .info-video .time {
   color: #bfc3ce;
+  font-size: .7em;
 }
 
 #content .video .info-video .uploader {
-  margin-top: 0.4em;
+  margin-top: 0.1em;
 }
 
 #content .video .info-video .uploader h5 {
   margin-bottom: -4px;
-  font-size: 1.1em;
+  font-size: .9em;
 }
 
 #content .video .info-video .uploader small {
+  font-size: .7em;
   color: #bfc3ce;
 }
 /*# sourceMappingURL=main.css.map */
