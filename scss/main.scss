@@ -1,14 +1,224 @@
 @import "_variable.scss";
 
 body {
+  scroll-behavior: smooth;
   background-color: $backgroundColor;
   font-family: "Josefin Sans", sans-serif;
   color: $secondaryColor;
   font-weight: 400;
 }
 
+#home {
+  .scroll-top {
+    transition: 0.4s;
+    transform: translateY(15px);
+    opacity: 0;
+    &.show {
+      opacity: 1;
+      transform: translateY(-15px);
+    }
+    &:hover {
+      color: $secondaryColor;
+    }
+    font-size: 1.2em;
+    background-color: $text;
+    border-radius: 50%;
+    color: $secondaryColor;
+    box-shadow: 1px 1px 5px #000;
+    padding: 0.3em 0.55em;
+    position: fixed;
+    @media (min-width: 768px) {
+      right: 3.5em;
+      bottom: 3em;
+    }
+    bottom: 3em;
+    right: 1em;
+  }
+
+  .sidebar-navbar {
+    background-color: $primaryColor;
+    padding-bottom: 2em;
+    .info {
+      @media (min-width: 768px) {
+        margin: 2em 0;
+      }
+      margin: 1em 0;
+      .profil {
+        h4 {
+          margin-bottom: -5px;
+        }
+        .role {
+          color: $secondaryText;
+        }
+      }
+
+      .notifikasi {
+        .btn {
+          color: $secondaryColor;
+          font-size: 1.4em;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .greeting {
+      margin-top: 2.4em;
+      h2 {
+        margin-bottom: 0;
+      }
+      p {
+        color: $secondaryText;
+      }
+    }
+
+    .search {
+      margin-top: 2em;
+      input {
+        background-color: $secondaryColor;
+        border-radius: 20px;
+        color: lighten($color: #000, $amount: 15);
+      }
+      button {
+        background-color: $text;
+        border-radius: 50%;
+        color: $secondaryColor;
+        border: none;
+      }
+    }
+
+    // SIDEBRAR DESKTOP
+    .sidebar {
+      @media (max-width: 768px) {
+        display: none;
+      }
+      margin: 2em 0 0 0;
+      border: 4px solid $text;
+      padding-left: 1.4em;
+      padding-right: 1.4em;
+      padding-top: 1em;
+      border-radius: 20px;
+
+      nav {
+        a {
+          &.active {
+            color: $secondaryColor;
+          }
+          color: $secondaryText;
+          padding: 0.4em 0;
+          font-size: 1.2em;
+          i {
+            font-size: 1.3em;
+            margin-right: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  #content {
+    padding-bottom: 2em;
+    .title {
+      margin-bottom: 1.4em;
+      h1 {
+        display: inline-block;
+        position: relative;
+        font-size: 1.4em;
+        @media (min-width: 768px) {
+          font-size: 1.7em;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -6px;
+          width: 50%;
+          height: 2px;
+          background-color: $secondaryColor;
+          border-radius: 6px;
+        }
+        i {
+          font-size: 0.9em;
+          margin-right: 0.3em;
+        }
+      }
+      a {
+        @media (max-width: 728px) {
+          font-size: 0.7em;
+        }
+        font-size: 0.9em;
+        color: $secondaryText;
+        text-decoration: none;
+        i {
+          font-size: 0.6em;
+        }
+      }
+    }
+
+    .konten-kategori {
+      // margin-top: 1.4em;
+      .btn-kategori {
+        font-size: 0.9em;
+        margin-right: 0.8em;
+        margin-bottom: 1em;
+        background-color: $text;
+        color: $secondaryColor;
+        border-radius: 12px;
+      }
+    }
+
+    .video {
+      h5 {
+        color: $secondaryColor;
+        font-size: 1.1em;
+        margin-top: 0.5em;
+        margin-bottom: 2px;
+      }
+      .info-video {
+        .time {
+          color: $secondaryText;
+          font-size: 0.7em;
+        }
+        .uploader {
+          margin-top: 0.1em;
+          h5 {
+            margin-bottom: -4px;
+            font-size: 0.9em;
+          }
+          small {
+            font-size: 0.7em;
+            color: $secondaryText;
+          }
+        }
+      }
+    }
+  }
+}
+
+#video {
+  padding-bottom: 3em;
+  .info-video {
+    .time {
+      color: $secondaryText;
+      font-size: 0.8em;
+      span {
+        margin-right: 1em;
+      }
+    }
+  }
+  .btn-kategori {
+    font-size: 0.9em;
+    margin-right: 0.4em;
+    margin-bottom: 0.8em;
+    background-color: $text;
+    color: $secondaryColor;
+    border-radius: 12px;
+  }
+}
+
+// SCROLL TO top BUTTON
 .scroll-top {
-  transition: .4s;
+  transition: 0.4s;
   transform: translateY(15px);
   opacity: 0;
   &.show {
@@ -18,11 +228,12 @@ body {
   &:hover {
     color: $secondaryColor;
   }
+  font-size: 1.2em;
   background-color: $text;
   border-radius: 50%;
   color: $secondaryColor;
-  box-shadow: 1px 1px 4px $primaryColor;
-  padding: .3em .55em;
+  box-shadow: 1px 1px 5px #000;
+  padding: 0.3em 0.55em;
   position: fixed;
   @media (min-width: 768px) {
     right: 3.5em;
@@ -31,187 +242,29 @@ body {
   bottom: 3em;
   right: 1em;
 }
-.sidebar-navbar {
+// NAVBAR BWH ANDROID
+nav.navbar {
+  @media (min-width: 768px) {
+    display: none;
+  }
   background-color: $primaryColor;
-  padding-bottom: 2em;
-  .info {
-    @media (min-width: 768px) {
-      margin: 2em 0;
-    }
-    margin: 1em 0;
-    .profil {
-      h4 {
-        margin-bottom: -5px;
-      }
-      .role {
-        color: $secondaryText;
-      }
-    }
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+  padding: 2px 0 0 0;
 
-    .notifikasi {
-      .btn {
-        color: $secondaryColor;
-        font-size: 1.4em;
-        border-radius: 50%;
-      }
-    }
-  }
-
-  .greeting {
-    margin-top: 2.4em;
-    h2 {
-      margin-bottom: 0;
-    }
-    p {
-      color: $secondaryText;
-    }
-  }
-
-  .search {
-    margin-top: 2em;
-    input {
-      background-color: $secondaryColor;
-      border-radius: 20px;
-      color: lighten($color: #000, $amount: 15);
-    }
-    button {
-      background-color: $text;
-      border-radius: 50%;
+  a {
+    &.active {
       color: $secondaryColor;
-      border: none;
     }
-  }
-
-  // SIDEBRAR DESKTOP
-  .sidebar {
-    @media (max-width: 768px) {
-      display: none;
+    padding: 0.5em 0 0 0;
+    i {
+      font-size: 1.1em;
     }
-    margin: 2em 0 0 0;
-    border: 4px solid $text;
-    padding-left: 1.4em;
-    padding-right: 1.4em;
-    padding-top: 1em;
-    border-radius: 20px;
-
-    nav {
-      a {
-        &.active {
-          color: $secondaryColor;
-        }
-        color: $secondaryText;
-        padding: 0.4em 0;
-        font-size: 1.2em;
-        i {
-          font-size: 1.3em;
-          margin-right: 0.5em;
-        }
-      }
-    }
-  }
-
-  // NAVBAR BWH ANDROID
-  nav.navbar {
-    @media (min-width: 768px) {
-      display: none;
-    }
-    background-color: $primaryColor;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    text-align: center;
-    padding: 2px 0 0 0;
-
-    a {
-      &.active {
-        color: $secondaryColor;
-      }
-      padding: .5em 0 0 0;
-      i {
-        font-size: 1.1em;
-      }
-      small {
-        display: block;
-        font-size: .7em;
-        margin-top: -6px;
-      }
-    }
-  }
-}
-
-#content {
-  padding-bottom: 2em;
-  .title {
-    margin-bottom: 1.4em;
-    h1 {
-      display: inline-block;
-      position: relative;
-      font-size: 1.4em;
-      @media (min-width: 768px) {
-        font-size: 1.7em;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -6px;
-        width: 50%;
-        height: 2px;
-        background-color: $secondaryColor;
-        border-radius: 6px;
-      }
-      i {
-        font-size: 0.9em;
-        margin-right: 0.3em;
-      }
-    }
-    a {
-      @media (max-width: 728px) {
-        font-size: 0.7em;
-      }
-      font-size: 0.9em;
-      color: $secondaryText;
-      text-decoration: none;
-      i {
-        font-size: 0.6em;
-      }
-    }
-  }
-
-  .konten-kategori {
-    // margin-top: 1.4em;
-    .btn-kategori {
-      font-size: 0.9em;
-      margin-right: 0.8em;
-      margin-bottom: 1em;
-      background-color: $text;
-      color: $secondaryColor;
-      border-radius: 12px;
-    }
-  }
-
-  .video {
-    // margin-top: 1.4em;
-    .info-video {
-      h5 {
-       font-size: 1.1em; 
-      }
-      margin-top: 0.5em;
-      .time {
-        color: $secondaryText;
-        font-size: .7em;
-      }
-      .uploader {
-        margin-top: 0.1em;
-        h5 {
-          margin-bottom: -4px;
-          font-size: .9em;
-        }
-        small {
-          font-size: .7em;
-          color: $secondaryText;
-        }
-      }
+    small {
+      display: block;
+      font-size: 0.7em;
+      margin-top: -6px;
     }
   }
 }
