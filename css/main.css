@@ -109,16 +109,21 @@ body {
   }
 }
 
+.sidebar-navbar nav.navbar a {
+  padding: .5em 0 0 0;
+}
+
 .sidebar-navbar nav.navbar a.active {
   color: #f4f8ff;
 }
 
 .sidebar-navbar nav.navbar a i {
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 .sidebar-navbar nav.navbar a small {
   display: block;
+  font-size: .8em;
   margin-top: -6px;
 }
 
